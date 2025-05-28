@@ -76,3 +76,42 @@ a:hover{
     border-radius: 5px;
     border: none;
 }
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: large;
+        text-align: center;
+    }
+
+    #status {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(8, 40px);
+        grid-template-rows: repeat(8, 40px);
+    }
+
+    .box {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    button, #but {
+        width: 50%;
+        font-size: 14px;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
