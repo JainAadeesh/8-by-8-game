@@ -113,3 +113,4 @@ function checkDirection(row, col, dx, dy) {
 //     updateBoard();
 // }
 
+  
