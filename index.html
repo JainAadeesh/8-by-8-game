@@ -9,10 +9,17 @@
 </head>
 
 <body>
-    <h1>Two Player Grid Game</h1>
-    <div id="game-board"></div>
-    <p id="status">Player 1's turn (X)</p>
-    <button id="but" onclick = "restartGame()"> Restart game</button>
+    <div class="cont hide">
+        <p id="status">Player 1's turn (X)</p>
+        <button onclick="restartGame()">New game</button>
+    </div>
+    <div class="con hide">
+        <h1>Two Player Grid Game</h1>
+        <p id="status">Player 1's turn (X)</p>
+        <div id="game-board"></div>
+        <button onclick="restartGame()"> Restart game</button>
+    </div>
+
     <script src="index.js"></script>
 </body>
 

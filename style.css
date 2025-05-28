@@ -14,6 +14,14 @@ h1 {
     font-style:oblique;
 }
 
+.con{
+    text-align: center;
+}
+
+.cont{
+    text-align: center;
+}
+
 #status {
     font-size: 20px;
     color: #191818;
@@ -51,12 +59,18 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
     color: #007bff;
+}
+
+.hide{
+    display: none;
 }
 
 a:hover {
@@ -68,50 +82,16 @@ a:hover{
     color: #191818;
 }
 
-#but{
-    margin: 0;
-    padding: 0;
-    height: 30px;
-    width: 110px;
-    border-radius: 5px;
-    border: none;
-}
+
 
 @media (max-width: 768px) {
-    body {
-        height: auto;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: large;
-        text-align: center;
-    }
-
-    #status {
-        font-size: 16px;
-        text-align: center;
-    }
-
     #game-board {
-        grid-template-columns: repeat(8, 40px);
-        grid-template-rows: repeat(8, 40px);
+        grid-template-columns: repeat(8, 45px);
+        grid-template-rows: repeat(8, 45px);
     }
 
     .box {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    button, #but {
-        width: 50%;
-        font-size: 14px;
-        padding: 8px;
-        margin-top: 10px;
-    }
-
-    a {
-        font-size: 16px;
+        width: 45px;
+        height: 45px;
     }
 }
