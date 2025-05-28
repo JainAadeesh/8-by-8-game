@@ -41,7 +41,7 @@ function handleClick(col) {
         }
     }
     alert("Column is full. Choose another one.");
-     play.classList.remove("hide");
+    play.classList.remove("hide");
     win.classList.add("hide");
 }
 
@@ -110,5 +110,7 @@ function restartGame() {
     gameOver = false;
     statusText.textContent = `Player 1's turn (X)`;
     updateBoard();
+    play.classList.remove("hide");
+    win.classList.add("hide");
 }
 
